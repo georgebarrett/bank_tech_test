@@ -38,4 +38,13 @@ describe('Account', () => {
         expect(lastWithdraw.balance).toEqual(-500)
     });
 
+    test('to make sure multiple transactions are successful', () => {
+        account = new Account();
+        account.deposit(5000, '05/01/2023');
+        account.deposit(5000, '06/01/2023');
+        account.withdraw(5000, '07/01/2023');
+        const lastTransaction = account.transactions[account.transactions.length - 1];
+        expect(lastTransaction.balance).toEqual(5000)
+    })
+
 });
