@@ -24,4 +24,11 @@ describe('Account', () => {
         ]);
     });
 
+    test('it should recognise the last deposit', () => {
+        account = new Account();
+        account.deposit(500, '03/01/2023');
+        const lastDeposit = account.transactions[account.transactions.length - 1];
+        expect(lastDeposit.balance).toEqual(500)
+    });
+
 });
