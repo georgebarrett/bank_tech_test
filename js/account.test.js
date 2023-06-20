@@ -31,4 +31,11 @@ describe('Account', () => {
         expect(lastDeposit.balance).toEqual(500)
     });
 
+    test('it should recognise the last withdrawal', () => {
+        account = new Account();
+        account.withdraw(500, '04/01/2023');
+        const lastWithdraw = account.transactions[account.transactions.length - 1];
+        expect(lastWithdraw.balance).toEqual(-500)
+    });
+
 });
