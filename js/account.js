@@ -18,7 +18,13 @@ class Account {
     }
 
     withdraw(amount, date) {
-
+        const updatedBalance = this.balance -= amount;
+        this.transactions.push({
+            amount: amount,
+            date: date,
+            type: 'withdrawal',
+            balance: updatedBalance
+        });
     }
 
     print() {
