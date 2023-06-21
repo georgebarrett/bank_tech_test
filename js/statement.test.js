@@ -26,7 +26,7 @@ describe("Statement", () => {
     };
     const consoleSpy = jest.spyOn(console, "log");
     const statement = new Statement();
-    statement.printStatement(mockAccount.transactions);
+    statement.print(mockAccount.transactions);
     expect(consoleSpy).toHaveBeenCalledWith("date || credit || debit || balance");
     expect(consoleSpy).toHaveBeenCalledWith("14/01/2023 || || 500.00 || 2500.00");
     expect(consoleSpy).toHaveBeenCalledWith("13/01/2023 || 2000.00 || || 3000.00");
