@@ -85,4 +85,5 @@ to run the test suite, enter ```jest``` into the terminal. this will only work o
 
 # Screenshot
 
-refer to screenShot.png within the js directory
+<img width="542" alt="screenShot" src="https://github.com/georgebarrett/bank_tech_test/assets/102233653/a1f253f6-df85-4ac8-bfd4-411129e33942">
+
