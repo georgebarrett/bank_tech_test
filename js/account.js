@@ -27,8 +27,9 @@ class Account {
         });
     }
 
-    print() {
-
+    printStatement() {
+        const statement = new Statement();
+        statement.print(this.transactions);
     }
 
 }
