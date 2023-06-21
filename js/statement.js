@@ -1,6 +1,6 @@
 class Statement {
 
-    printStatement(transactions) {
+    print(transactions) {
         console.log("date || credit || debit || balance");
         transactions.reverse().map((transaction) => {
             if (transaction.type === "withdrawal") {
