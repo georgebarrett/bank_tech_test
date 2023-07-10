@@ -85,4 +85,4 @@ to run the test suite, enter ```jest``` into the terminal. this will only work o
 
 # Screenshot
 
-
+![bank test diagram](screenShot.png)
