@@ -69,12 +69,12 @@ print()
 this method prints an account statement
 
 Example Output:
-
+```
 date || credit || debit || balance
 01/01/2023 || || 100.00 || 3000.00
 02/01/2023 || 5000.00 || || 8000.00
 03/01/2023 || 1000.00 || || 7000.00
-
+```
 # Testing
 
 jest is the testing framework that is used in the application
